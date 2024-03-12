@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Alert(props) {
+const Alert = (props) => {
     if (props.error) {
         return (
             <div className={`alert alert-${props.error.alert} mt-3`} role="alert">

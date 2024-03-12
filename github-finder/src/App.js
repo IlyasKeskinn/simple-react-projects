@@ -3,74 +3,62 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import '../src/style.css'
 import Navbar from './component/Navbar';
 import UserList from './component/UserList';
-import React from 'react';
+import React, { useState } from 'react';
 import Search from './component/Search';
 import Loading from './component/Loading'
 import Alert from './component/Alert';
 
 
+const App = () => {
 
-export class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      users: [],
-      isLoaded: false,
-      error: null
-    }
-  }
+  const [users, setUsers] = useState([]);
+  const [isLoaded, setLoaded] = useState(false);
+  const [error, setError] = useState(null);
 
 
-
-  searchUser = (keyword) => {
-    this.setState({ isLoaded: true })
+  const searchUser = (keyword) => {
+    setLoaded(true);
 
     setTimeout(async () => {
       const BASE_URL = "https://api.github.com/search/users?q=";
       const response = await fetch(BASE_URL + keyword);
       let data = await response.json();
-      this.setState({ users: data.items, isLoaded: false });
+      setUsers(data.items);
+      setLoaded(false);
     }, 1000);
   }
 
+  const clearUsers = () => setUsers([]);
+
+  const sendError = (msg, alert) => {
+    setError({ msg, alert } )
+    setTimeout(()=>{
+      setError({error : null})
+    },1000)
+  };
 
 
-  clearUsers = () => {
-    this.setState({ users: [] })
+
+  if (isLoaded === true) {
+    return (
+      <div className="App">
+        <Navbar />
+        <Loading />
+      </div>
+    )
   }
+  else {
+    return (
 
-  sendError = (msg, alert) => {
-    this.setState({ error: { msg, alert } })
-
-    setTimeout(() => {
-      this.setState({ error: null })
-    }, 2000);
-  }
-
-  render() {
-
-    if (this.state.isLoaded === true) {
-      return (
-        <div className="App">
-          <Navbar />
-          <Loading />
+      <div className="App">
+        <Navbar />
+        <div className='container'>
+          <Search searchUser={searchUser} users={users} clearUsers={clearUsers} sendError={sendError} />
+          <Alert error={error} />
+          <UserList users={users} isLoaded={isLoaded} />
         </div>
-      )
-    }
-    else {
-      return (
-
-        <div className="App">
-          <Navbar />
-          <div className='container'>
-            <Search searchUser={this.searchUser} users={this.state.users} clearUsers={this.clearUsers} sendError={this.sendError} />
-            <Alert error={this.state.error} />
-            <UserList users={this.state.users} isLoaded={this.state.isLoaded} />
-          </div>
-        </div>
-      )
-    }
+      </div>
+    )
   }
 }
 
