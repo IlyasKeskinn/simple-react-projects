@@ -1,16 +1,24 @@
 import { useState } from "react";
-
-const AddTodo = (props) => {
+import { useContext } from 'react';
+import {TodosContext} from '../contexts/todosContext';
+const AddTodo = () => {
+    const  {todos, dispatch } = useContext(TodosContext);
     const [todo, setTodo] = useState('');
 
     const changeTodo = (e) => {setTodo(e.target.value)};
 
     const addTodo = (e) => {
         e.preventDefault();
-        props.newTodo(todo);
+        dispatch({
+            type : "ADD_TODO",
+            id : todos.length +1 ,
+            title : todo
+          })
         setTodo('');
         
     }
+
+ 
 
     return (
         <div className="card-footer d-flex">

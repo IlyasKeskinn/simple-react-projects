@@ -3,41 +3,19 @@ import AddTodo from './component/AddTodo';
 import CardHeader from './component/CardHeader';
 import TodoList from './component/TodoList';
 import './style.css'
-import { useEffect, useState } from 'react';
+import TodosContextProvider from './contexts/todosContext';
 
 const App = () => {
-
-  const [todos, setTodos] = useState([]);
-
-  useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("todos"));
-    if (data) {
-      setTodos(data);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
-
-  const newTodo = (todo) => {
-    setTodos([...todos, { "id": todos.length + 1, "title": todo }]);
-  }
-
-  const removeTodo =  (id) => {
-    setTodos(todos.filter(todo => todo.id !== id));
-  }
-
-  const clearTodos = () => setTodos([]);
-  
   return (
-    <div className=" todo-container">
-      <div className="card">
-        <CardHeader title="Todo List" clearTodos={clearTodos} />
-        <TodoList todos={todos}  removeTodo= {removeTodo} />
-        <AddTodo newTodo={newTodo} />
+    <TodosContextProvider> 
+      <div className=" todo-container">
+        <div className="card">
+          <CardHeader title ="Todo App"/>
+          <TodoList/>
+          <AddTodo/>
+        </div>
       </div>
-    </div>
+    </TodosContextProvider>
   );
 }
 
