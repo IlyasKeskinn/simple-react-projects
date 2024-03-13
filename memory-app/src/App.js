@@ -64,6 +64,7 @@ function App() {
     setDisabled(false);
     setSelecetedCardOne(null);
     setSelecetedCardTwo(null);
+    setScore(0);
   }
 
   const selectedCardHandle = (card) => {
