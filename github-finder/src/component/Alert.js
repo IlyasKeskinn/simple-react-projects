@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ErrorContext } from '../contexts/errorContext'
 
-const Alert = (props) => {
-    if (props.error) {
+const Alert = () => {
+    const {error} = useContext(ErrorContext);
+    if (error) {
         return (
-            <div className={`alert alert-${props.error.alert} mt-3`} role="alert">
-                {props.error.msg}
+            <div className={`alert alert-${error.alert} mt-3`} role="alert">
+                {error.msg}
             </div>
         )
     }

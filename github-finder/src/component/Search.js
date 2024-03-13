@@ -1,6 +1,13 @@
 import  { useState } from 'react'
+import { UserContext } from '../contexts/userContext';
+import { useContext } from 'react';
+import { ErrorContext } from '../contexts/errorContext';
+
 
 const Search = (props) => {
+
+    const {searchUser,users, clearUsers}  = useContext(UserContext);
+    const {sendError} = useContext(ErrorContext);
 
     const [keyword, setKeyword] = useState('');
 
@@ -12,12 +19,12 @@ const Search = (props) => {
         e.preventDefault();
 
         if (keyword.length < 3) {
-            props.sendError("Username must be greater than 3 characters", "warning");
+            sendError("Username must be greater than 3 characters", "warning");
         }
         else {
-            props.searchUser(keyword);
+            searchUser(keyword);
             setKeyword('');
-            props.clearUsers();
+            clearUsers();
         }
     }
 
@@ -31,7 +38,7 @@ const Search = (props) => {
                     </div>
                 </div>
             </form>
-            {props.users.length > 0 ? <button onClick={props.clearUsers} className="btn btn-outline-danger w-100 py-2 mt-3 " type="button">Clear</button> : ''}
+            {users.length > 0 ? <button onClick={clearUsers} className="btn btn-outline-danger w-100 py-2 mt-3 " type="button">Clear</button> : ''}
         </div>
     );
 }
