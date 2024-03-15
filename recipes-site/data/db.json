@@ -1,0 +1,128 @@
+{
+  "tarifler": [
+    {
+      "id": "1",
+      "title": "Halka Kebabı",
+      "list": [
+        "500 gram kıyma",
+        "1 çay kaşığı tuz",
+        "Yarım çay kaşığı karabiber",
+        "3 adet patlıcan",
+        "3 adet patates"
+      ],
+      "desc": "4-6 Kişilik 20dk Hazırlık, 1 saat 15dk Pişirme",
+      "preparation": "Patlıcanların kabuklarını alacalı olarak soyalım ve yarım parmak genişliğinde dilimleyelim.Ardından su dolu kabın içerisine tuz ekleyip karıştıralım ve patlıcanları acısının çıkması için suya alarak 20 dakika bekletelim. Kabuklarını soyduğumuz soğanları da daire şeklinde dilimleyelim.",
+      "url": "https://www.nefisyemektarifleri.com/video/halka-kebabi/",
+      "img": "halka-kebabi.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Karnıyarık Yemeği",
+      "list": [
+        "6 adet küçük boy patlıcan",
+        "3 adet sivri biber",
+        "2 adet orta boy soğan",
+        "2 adet domates",
+        "2 adet sivri biber"
+      ],
+      "desc": "4-6 Kişilik 25dk Hazırlık, 25dk Pişirme",
+      "preparation": "Patlıcanları çizgili soyup, yarım saat yağ çekmemesi için tuzlu suda bekletin.İyice yıkadıktan sonra suyunu havlu ile çektirin ve az yağda kızartın. 3 adet biberi de yağda kızartın.Daha sonra aynı tavada doğranmış soğanları kavurun, kıymayı ekleyerek bir müddet daha kavurun ve biberleri, sarımsağı ekleyerek 2 dakika daha kavurun.",
+      "url": "https://www.nefisyemektarifleri.com/video/karniyarik-yemegi-videosu/",
+      "img": "/karniyarik-yemegi.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Tavuklu Sultan Kebabı",
+      "list": [
+        "2 adet yufka",
+        "400g tavuk göğsü",
+        "400g tavuk pirzola",
+        "1 adet kuru soğan",
+        "1 yemek kaşığı domates salçası"
+      ],
+      "desc": "6-8 Kişilik 45dk Hazırlık, 25dk Pişirme",
+      "preparation": "Patlıcanı alacalı soyarak küçük küçük doğrayın ve sıvı yağ ile kızartın.Süzgece alarak yağının süzmesi bekleyin bu arada tavukları soteleyin.Tavukları kuş başı doğrayın, tencereye alarak arada karıştırarak pişirin.Rengi dönüp suyunu saldığında yemeklik doğranmış soğanı ekleyin.",
+      "url": "https://www.nefisyemektarifleri.com/tavuklu-sultan-kebabi-tarifi/",
+      "img": "/tavuklu-sultan-kebabi.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Halka Kebabı",
+      "list": [
+        "500 gram kıyma",
+        "1 çay kaşığı tuz",
+        "Yarım çay kaşığı karabiber",
+        "3 adet patlıcan",
+        "3 adet patates"
+      ],
+      "desc": "4-6 Kişilik 20dk Hazırlık, 1 saat 15dk Pişirme",
+      "preparation": "Patlıcanların kabuklarını alacalı olarak soyalım ve yarım parmak genişliğinde dilimleyelim.Ardından su dolu kabın içerisine tuz ekleyip karıştıralım ve patlıcanları acısının çıkması için suya alarak 20 dakika bekletelim. Kabuklarını soyduğumuz soğanları da daire şeklinde dilimleyelim.",
+      "url": "https://www.nefisyemektarifleri.com/video/halka-kebabi/",
+      "img": "/halka-kebabi.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Karnıyarık Yemeği",
+      "list": [
+        "6 adet küçük boy patlıcan",
+        "3 adet sivri biber",
+        "2 adet orta boy soğan",
+        "2 adet domates",
+        "2 adet sivri biber"
+      ],
+      "desc": "4-6 Kişilik 25dk Hazırlık, 25dk Pişirme",
+      "preparation": "Patlıcanları çizgili soyup, yarım saat yağ çekmemesi için tuzlu suda bekletin.İyice yıkadıktan sonra suyunu havlu ile çektirin ve az yağda kızartın. 3 adet biberi de yağda kızartın.Daha sonra aynı tavada doğranmış soğanları kavurun, kıymayı ekleyerek bir müddet daha kavurun ve biberleri, sarımsağı ekleyerek 2 dakika daha kavurun.",
+      "url": "https://www.nefisyemektarifleri.com/video/karniyarik-yemegi-videosu/",
+      "img": "/karniyarik-yemegi.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Tavuklu Sultan Kebabı",
+      "list": [
+        "2 adet yufka",
+        "400g tavuk göğsü",
+        "400g tavuk pirzola",
+        "1 adet kuru soğan",
+        "1 yemek kaşığı domates salçası"
+      ],
+      "desc": "6-8 Kişilik 45dk Hazırlık, 25dk Pişirme",
+      "preparation": "Patlıcanı alacalı soyarak küçük küçük doğrayın ve sıvı yağ ile kızartın.Süzgece alarak yağının süzmesi bekleyin bu arada tavukları soteleyin.Tavukları kuş başı doğrayın, tencereye alarak arada karıştırarak pişirin.Rengi dönüp suyunu saldığında yemeklik doğranmış soğanı ekleyin.",
+      "url": "https://www.nefisyemektarifleri.com/tavuklu-sultan-kebabi-tarifi/",
+      "img": "/tavuklu-sultan-kebabi.jpg"
+    },
+    {
+      "title": "Karaköy Poğaçası",
+      "desc": "8-10 Kişilik 1 saat 30dk Hazırlık, 20dk Pişirme",
+      "img": "karakoy-pogacasi-1.jpg",
+      "url": "https://www.nefisyemektarifleri.com/karakoy-pogacasi-11608887/",
+      "preparation": "Oda sıcaklığındaki tereyağ ile sıvı yağ, yumurta, yoğurt, maya, şeker ve tuz bir kaba konulup iyice karıştırılır.\nKontrollü olarak un eklenip yumuşak bir hamur elde edilir.\n1 saat hamur dinlendirilir.\nHamurdan parçalar alınıp yuvarlanıp şekil verilir ve üzeri bastırılır.\nPaoğaçaların üzerine yumurta sürülür ve çatalla şekil verilir.\n15 dakika tepside veya 5 dakika 70 derece fırında bekletilir.\n180 derece fırında altı üstü kızarana kadar pişirilir.Afiyet olsun 😋.",
+      "list": [
+        "250 gram tereyağ",
+        "1 çay bardağı sıvı yağ",
+        "2 yumurta (1 inin sarısı üzerine sürmek için ayrılıyor)",
+        "1 çay bardağı yoğurt",
+        "1 yemek kaşığı şeker",
+        "1 tatlı kaşığı tuz",
+        "1 paket 10 gram kuru maya",
+        "4 su bardağı un"
+      ],
+      "id": "UqlSJqt"
+    },
+    {
+      "title": "Saray Lokması",
+      "desc": "6-8 Kişilik 20dk Hazırlık, 20dk Pişirme",
+      "img": "saray-lokmasi.jpg",
+      "url": "https://nefisyemektarifleri.com/saray-lokmasi-11607820/",
+      "preparation": "İlk olarak vanilya ve tereyağ hariç tüm malzemeler tencereye alınır.\nÇırpma teli ile topaklanmaması için iyice çırpılır.\nOrta ateşte çırpma teli ile sürekli karıştırarak pişirilir.\nMuhallebi kıvam alıp göz göz olmaya başlayınca içine tereyağı ve vanilya eklenir.\nİç çapı eşit bardaklar tercih edilir.\nArdından bardaklar sudan geçirilir ve suyun fazlası akıtılır.\nBardaklara sırasıyla muhallebi doldurulur.\nOda sıcaklığına geldikten sonra buzdolabına kaldırılır.\nDinlenen muhallebiler bıçak yardımı ile kenarlarından ayrılır.\nBardaktan çıkan muhallebi dilimlenir.\nFındık kırığı parçaları ile kenarları süslenir.\nÜzerine çikolata sürülür. Deneyeceklere afiyet olsun😍.",
+      "list": [
+        "1 litre süt",
+        "1 su bardağı un",
+        "7 yemek kaşığı toz şeker",
+        "1 paket vanilya",
+        "2 yemek kaşığı nişasta",
+        "1 yemek kaşığı dolu dolu tereyağı (50 gr)"
+      ],
+      "id": "ThX6LHH"
+    }
+  ]
+}

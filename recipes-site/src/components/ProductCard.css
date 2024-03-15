@@ -1,0 +1,12 @@
+.card{
+    height: 100% !important; 
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-desc{
+    font-size: 14px;
+    color: #a9b2a9;
+}
